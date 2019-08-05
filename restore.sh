@@ -10,3 +10,6 @@ do
         echo "source: $sourceFile dest: $backupFile"
     fi
 done < "configSources"
+
+
+echo "Restore sucessful."
