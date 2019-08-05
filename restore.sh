@@ -7,7 +7,7 @@ do
     if [ ! -z $sourceFile ] && [ ! -z $backupFile ]
     then
         cp $sourceFile $backupFile
-        echo "source: $sourceFile dest: $backupFile"
+        echo "Updating   source: $backupFile dest: $sourceFile"
     fi
 done < "configSources"
 
