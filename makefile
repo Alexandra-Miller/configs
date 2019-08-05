@@ -1,3 +1,0 @@
-document:
-	autodoc *.hs
-
