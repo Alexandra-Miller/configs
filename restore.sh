@@ -2,8 +2,8 @@
 
 while IFS= read -r line
 do
-    backupFile=`cut -d ':' -f1 <<< $line`
-    sourceFile=`cut -d ':' -f2 <<< $line`
+    backupFile=`cut -d ':' -f2 <<< $line`
+    sourceFile=`cut -d ':' -f1 <<< $line`
     if [ ! -z $sourceFile ] && [ ! -z $backupFile ]
     then
         cp $sourceFile $backupFile
