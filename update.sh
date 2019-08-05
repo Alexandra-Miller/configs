@@ -6,10 +6,10 @@ do
     backupFile=`cut -d ':' -f2 <<< $line`
     if [ ! -z $sourceFile ] && [ ! -z $backupFile ]
     then
-        cp $sourceFile $backupFile
-        echo "Copying   source: $sourceFile dest: $backupFile"
+        cp $sourceFile $backupFile.bkp
+        echo "Copying   source: $sourceFile dest: $backupFile.bkp"
     fi
 done < "configSources"
 
-git add .
+git add *.bkp
 git commit -m "updated config files from source"

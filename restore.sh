@@ -6,8 +6,8 @@ do
     sourceFile=`cut -d ':' -f1 <<< $line`
     if [ ! -z $sourceFile ] && [ ! -z $backupFile ]
     then
-        cp $sourceFile $backupFile
-        echo "Updating   source: $backupFile dest: $sourceFile"
+        cp $sourceFile.bkp $backupFile
+        echo "Updating   source: $backupFile.bkp dest: $sourceFile"
     fi
 done < "configSources"
 
