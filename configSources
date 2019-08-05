@@ -1,4 +1,2 @@
-~/.vimrc : vimrc
-~/.config/kitty/kitty.conf : kitty.conf
-
-
+/home/enyo/.vimrc:vimrc
+/home/enyo/.config/kitty/kitty.conf:kitty.conf
