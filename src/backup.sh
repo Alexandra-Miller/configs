@@ -6,8 +6,8 @@ do
     backupFile=`cut -d ':' -f2 <<< $line`
     if [ ! -z $sourceFile ] && [ ! -z $backupFile ]
     then
-        cp $sourceFile $backupFile.bkp
-        echo "Copying   source: $sourceFile dest: $backupFile.bkp"
+        cp $sourceFile backups/$backupFile.bkp
+        echo "Copying   source: $sourceFile dest: backups/$backupFile.bkp"
     fi
 done < "configSources"
 
